@@ -4,7 +4,7 @@ import './CheckoutProduct.css'
 import { useStateValue } from '../ContextAPI/StateProvider';
 
 function CheckoutProduct({ id, title, image, price, rating, }) {
-    const [{ basket }, dispatch] = useStateValue();
+    const [, dispatch] = useStateValue();
 
     const removeFromBasket = () => {
         dispatch({
@@ -16,7 +16,7 @@ function CheckoutProduct({ id, title, image, price, rating, }) {
 
     return (
         <div className='checkoutProduct'>
-            <img className='checkoutProduct__image' src={image} alt="" />
+            <img className='checkoutProduct__image' src={image} alt="checkoutProduct_image" />
 
             <div className='checkoutProduct__info'>
                 <p className='checkoutProduct__title'>{title}</p>

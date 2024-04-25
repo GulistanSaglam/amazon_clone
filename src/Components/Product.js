@@ -5,7 +5,7 @@ import { useStateValue } from '../ContextAPI/StateProvider';
 
 function Product({ id, title, image, price, rating }) {
 
-    const [{ basket }, dispatch] = useStateValue();
+    const [, dispatch] = useStateValue();
 
     const addToBasket = () => {
         dispatch({
@@ -38,7 +38,7 @@ function Product({ id, title, image, price, rating }) {
                 </div>
             </div>
 
-            <img src={image} alt='' />
+            <img src={image} alt='image' />
             <button onClick={addToBasket}>Add to basket</button>
         </div>
     )

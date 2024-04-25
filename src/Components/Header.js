@@ -8,7 +8,7 @@ import { useStateValue } from '../ContextAPI/StateProvider';
 
 function Header() {
 
-    const [{ basket }, dispatch] = useStateValue();
+    const [{ basket },] = useStateValue();
 
     console.log(basket);
 
@@ -18,7 +18,7 @@ function Header() {
                 <img
                     className='header__logo'
                     src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
-                    alt=''
+                    alt='headerLogo'
                 />
             </Link>
 

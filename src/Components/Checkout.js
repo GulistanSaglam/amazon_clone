@@ -7,7 +7,7 @@ import Subtotal from './Subtotal';
 
 function Checkout() {
 
-    const [{ basket }, dispatch] = useStateValue();
+    const [{ basket },] = useStateValue();
 
     return (
         <>
@@ -17,6 +17,7 @@ function Checkout() {
                     <img
                         className='checkout__ad'
                         src='https://images-fe.ssl-images-amazon.com/images/G/35/GiftCards/BM_AU_POSA_banner.jpg'
+                        alt='checkout_ad'
                     />
 
                     {basket?.length === 0 ? (
