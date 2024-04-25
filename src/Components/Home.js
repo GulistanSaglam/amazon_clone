@@ -11,7 +11,7 @@ function Home() {
             <div className='home'>
                 <img
                     className='home__image'
-                    src='https://m.media-amazon.com/images/G/01/primevideo/seo/primevideo-seo-logo.png' />
+                    src="https://techstory.in/wp-content/uploads/2024/01/primevideo-seo-logo.png" />
 
                 <div className='home__row'>
                     <Product
